@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2553a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsViewController" customModule="ZhihuDaily" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="UDF-nT-y5t" id="OQj-sN-YT3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDF-nT-y5t" customClass="WKWebView" customModule="ZhihuDaily" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="622"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAB-1N-N6B">
+                    <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ToolBar_Shadow" translatesAutoresizingMaskIntoConstraints="NO" id="ggt-zM-SlJ">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="4FA-eQ-kMz"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rc-xi-cls">
+                            <rect key="frame" x="83" y="2" width="64" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="64" id="4Ww-Dr-Hdd"/>
+                                <constraint firstAttribute="height" constant="43" id="7dt-1v-qoO"/>
+                            </constraints>
+                            <state key="normal" image="News_Navigation_Next"/>
+                            <state key="highlighted" image="News_Navigation_Next_Highlight"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0C-pe-HnB">
+                            <rect key="frame" x="155" y="2" width="64" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="64" id="FWB-DI-Csv"/>
+                                <constraint firstAttribute="height" constant="43" id="ktx-gq-7g0"/>
+                            </constraints>
+                            <state key="normal" image="News_Navigation_Vote"/>
+                            <state key="highlighted" image="News_Navigation_Voted"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lg-4a-xjh">
+                            <rect key="frame" x="227" y="2" width="64" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="64" id="EZG-MV-1ak"/>
+                                <constraint firstAttribute="height" constant="43" id="HzD-ag-zKw"/>
+                            </constraints>
+                            <state key="normal" image="News_Navigation_Share"/>
+                            <state key="highlighted" image="News_Navigation_Share_Highlight"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqK-mf-wwG">
+                            <rect key="frame" x="299" y="2" width="64" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="C2y-jn-gHz"/>
+                                <constraint firstAttribute="width" constant="64" id="OhS-Un-N09"/>
+                            </constraints>
+                            <state key="normal" image="News_Navigation_Comment"/>
+                            <state key="highlighted" image="News_Navigation_Comment_Highlight"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0d-z6-eKQ">
+                            <rect key="frame" x="11" y="2" width="64" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="64" id="ozm-P9-6vx"/>
+                                <constraint firstAttribute="height" constant="43" id="yyB-Tq-XcX"/>
+                            </constraints>
+                            <state key="normal" image="News_Navigation_Arrow"/>
+                            <state key="highlighted" image="News_Navigation_Arrow_Highlight"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="4rc-xi-cls" firstAttribute="top" secondItem="ggt-zM-SlJ" secondAttribute="bottom" id="69H-p5-WMf"/>
+                        <constraint firstItem="ggt-zM-SlJ" firstAttribute="top" secondItem="rAB-1N-N6B" secondAttribute="top" id="6Ir-62-yQI"/>
+                        <constraint firstAttribute="bottom" secondItem="d0d-z6-eKQ" secondAttribute="bottom" id="9fF-Rd-iXv"/>
+                        <constraint firstAttribute="bottom" secondItem="4rc-xi-cls" secondAttribute="bottom" id="Abb-E0-71P"/>
+                        <constraint firstItem="jqK-mf-wwG" firstAttribute="leading" secondItem="4lg-4a-xjh" secondAttribute="trailing" constant="8" id="Jev-PK-uws"/>
+                        <constraint firstItem="ggt-zM-SlJ" firstAttribute="leading" secondItem="rAB-1N-N6B" secondAttribute="leading" id="K45-vz-4RS"/>
+                        <constraint firstAttribute="bottom" secondItem="4lg-4a-xjh" secondAttribute="bottom" id="L8m-oj-kuc"/>
+                        <constraint firstItem="M0C-pe-HnB" firstAttribute="top" secondItem="ggt-zM-SlJ" secondAttribute="bottom" id="VyQ-qK-Cja"/>
+                        <constraint firstItem="jqK-mf-wwG" firstAttribute="top" secondItem="ggt-zM-SlJ" secondAttribute="bottom" id="avU-HY-0OX"/>
+                        <constraint firstItem="4lg-4a-xjh" firstAttribute="top" secondItem="ggt-zM-SlJ" secondAttribute="bottom" id="brr-6w-zz9"/>
+                        <constraint firstItem="4lg-4a-xjh" firstAttribute="leading" secondItem="M0C-pe-HnB" secondAttribute="trailing" constant="8" id="cGl-Av-4eu"/>
+                        <constraint firstItem="M0C-pe-HnB" firstAttribute="centerX" secondItem="rAB-1N-N6B" secondAttribute="centerX" id="d73-CZ-A8u"/>
+                        <constraint firstAttribute="trailing" secondItem="ggt-zM-SlJ" secondAttribute="trailing" id="dc9-7b-Y4p"/>
+                        <constraint firstItem="M0C-pe-HnB" firstAttribute="leading" secondItem="4rc-xi-cls" secondAttribute="trailing" constant="8" id="fJK-Rq-qhQ"/>
+                        <constraint firstItem="4rc-xi-cls" firstAttribute="leading" secondItem="d0d-z6-eKQ" secondAttribute="trailing" constant="8" id="h49-rT-Hh7"/>
+                        <constraint firstAttribute="bottom" secondItem="jqK-mf-wwG" secondAttribute="bottom" id="hEv-fk-R5T"/>
+                        <constraint firstItem="d0d-z6-eKQ" firstAttribute="top" secondItem="ggt-zM-SlJ" secondAttribute="bottom" id="krw-v1-RQD"/>
+                        <constraint firstAttribute="bottom" secondItem="M0C-pe-HnB" secondAttribute="bottom" id="svP-Hh-dEg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UDF-nT-y5t" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DFh-U0-NJR"/>
+                <constraint firstAttribute="bottom" secondItem="rAB-1N-N6B" secondAttribute="bottom" id="Grb-bU-qEw"/>
+                <constraint firstAttribute="trailing" secondItem="rAB-1N-N6B" secondAttribute="trailing" id="Z0u-VC-Hbd"/>
+                <constraint firstAttribute="bottom" secondItem="UDF-nT-y5t" secondAttribute="bottom" constant="45" id="hhx-E0-Ymz"/>
+                <constraint firstItem="rAB-1N-N6B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kEF-Qj-0Ge"/>
+                <constraint firstItem="rAB-1N-N6B" firstAttribute="top" secondItem="UDF-nT-y5t" secondAttribute="bottom" id="rd7-E2-R1k"/>
+                <constraint firstItem="UDF-nT-y5t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uFG-pR-lY7"/>
+                <constraint firstAttribute="trailing" secondItem="UDF-nT-y5t" secondAttribute="trailing" id="xb9-Ss-UDO"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="101.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="News_Navigation_Arrow" width="64" height="43"/>
+        <image name="News_Navigation_Arrow_Highlight" width="64" height="43"/>
+        <image name="News_Navigation_Comment" width="64" height="43"/>
+        <image name="News_Navigation_Comment_Highlight" width="64" height="43"/>
+        <image name="News_Navigation_Next" width="64" height="43"/>
+        <image name="News_Navigation_Next_Highlight" width="64" height="43"/>
+        <image name="News_Navigation_Share" width="64" height="43"/>
+        <image name="News_Navigation_Share_Highlight" width="64" height="43"/>
+        <image name="News_Navigation_Vote" width="64" height="43"/>
+        <image name="News_Navigation_Voted" width="64" height="43"/>
+        <image name="ToolBar_Shadow" width="320" height="2"/>
+    </resources>
+</document>
